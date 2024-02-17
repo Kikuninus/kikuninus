@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="es" content="Marina Ertl" />
+    <meta name="keywords" content="HTML, CSS, Javascript, Java, Golf, Kikuninus, Manises" />
+    <meta name="description" content="Kikuninus, club de golf, golf, Valencia, Manises" />
+    <meta name="copyright" content="Kikuninus-golf" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/kikuninus-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Torneos pasados</title>
+
+<style>
+.blogs-main{
+    display: grid;
+}
+
+.news{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 70px 40px;
+}
+
+.news-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    color: black;
+}
+
+.news-content img{
+    grid-column: 1;
+    width: 55%;
+    display: inline-block;
+    margin: 20px 10 0 40px;
+}
+
+.news-info{
+    grid-column: 2;
+}
+
+.news-info h2{
+    margin-top: 10px 0 0 0;
+}
+
+.news-info p{
+    margin: 0px 0px 30px;
+}
+
+
+.posts{
+    padding: 0 80px 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.posts h3{
+    border-bottom: 1px solid white;
+    padding: 20px;
+    text-align: center;
+}
+
+.posts-blog{
+display: inline-block;
+padding: 15px;
+max-width: 32%;
+margin-bottom: 50px;
+
+}
+
+.posts-blog img{
+    width: 100%;
+}
+
+.posts-blog h4{
+margin: 20px 0;
+color: black;
+font-size: 18px;
+}
+
+.posts-blog p{
+    margin-bottom: 35px;
+text-align: justify;
+color: black;
+
+}
+
+
+.blogs-btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid green;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.blogs-btn:hover{
+    background-color: grey;
+    color: white;
+}
+
+.blogs-btn:active{
+    background-color: grey;
+    color: black;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1060px){
+    .posts{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 800px){
+
+    .news{
+        padding: 20px;
+    }
+    .news-content{
+        grid-template-columns: auto auto;
+    }
+    .news-content img{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .posts-blog{
+        max-width: 45%;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+
+.blogs-main{
+        padding: 0;
+    }
+    .news{
+        width: 100%;
+        padding: 10px;
+    }
+    .news-content{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+    .news-content img{
+        grid-row: 2;
+    }
+    .news-content .news-info{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .posts{
+        width: 100%;
+        padding: 10px;
+    }
+    .posts-blog{
+        max-width: 100%;
+    }
+}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo"> <img src="imagenes/Golf club logo with golf ball and gold laurel .png" alt=""></div>
+        <input type="checkbox" id="toggle">
+        <label for="toggle"> <img src="imagenes/menu.svg" alt="menu"></label>
+   
+        <nav class="navigation">
+
+                <ul>
+                    <li><a href="pagina inicio.html">Inicio</a></li>
+                    <li><a href="Calendario de torneos.html">Torneos</a>
+                         <ul>
+                            <li><a href="Calendario de torneos.html">Calendario de torneos</a></li>
+                            <li><a href="Torneos.html">Torneos pasados</a></li>
+                         </ul>
+                    </li>
+
+                    <li><a href="Hazte socio.html">Hazte Socio</a>
+                        <ul>
+                            <li><a href="Hazte socio.html">Hazte Socio</a></li>
+                            <li><a href="Correspondencias.html">Correspondencias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Clases.html">Clases</a></li>
+                    <li><a href="Fotogalería.html">Fotogalería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="Enlaces.html">Más información</a>
+                        <ul>
+                            <li><a href="Enlaces.html">Enlaces</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="junta directiva.html">Junta directiva</a></li>
+                            <li><a href="Patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+   
+   
+   
+   
+   
+    </header>
+ 
+
+<main class="blogs-main"> 
+    <section class="news">
+        <div class="news-content">
+            <h3>Noticias</h3>
+            <img src="imagenes/torneo clinic.jpeg" alt="img de blog">
+            <div class="news-info">
+                <h2>Próximo Torneo</h2>
+                <p> Ya tenemos fecha para nuestro primer CLINIC del año, impartido por José Manuel Lara de @laragolfacademy.
+                    <br>
+                    Se llevará a cabo en dos días:
+                    <br>
+                    - sábado 2 de marzo
+                    <br>
+                    - domingo 3 de marzo
+                    <br>
+                    
+                    Puedes inscribirte a través de nuestra página web en el apartado de calendario de torneos.
+                    ¡Corre, las plazas son limitadas! </p>
+                <a class="blogs-btn" href="Calendario de torneos.html">Inscríbete</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="posts">
+        <h3>Torneos pasados</h3>
+
+        <div class="posts-blog">
+            <img src="data:image/png;base64,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" alt="">
+            <h4>Torneo de San Valentín</h4>
+        <p> El día 10.02.24 se jugó en el campo de Golf El Bosque el torneo anual de San Valentín.</p>
+        <br><br><br><br><br><br><br><br><br><br>
+        <a class="blogs-btn" href="pagina inicio.html">Descubre más</a>
+        </div>
+
+        <div class="posts-blog">
+            <img src="imagenes/collage torneo borriol.png" alt="Foto-collage">
+            <h4>Torneo Ranking</h4>
+        <p> El 1er Torneo de 2024 de Kikuninus Club de Golf válido por el Ranking 2024, disputado en el Campo de Golf del Mediterraneo el dia 11.02.24, se saldó con el triunfo de Javier Fernandez, con un magnífico resultado de -2. El segundo lugar lo compartieron Carolina Lucía Jiménez y Rafa Navarro Delicado con 35 Ptos Stableford. Javier, además logró una de las dos bolas más cercanas, siendo la otra para nuestro Presidente, José Antonio Beneto, quienes hicieron gala de su buena puntería 😊</p>
+        <a class="blogs-btn" href="pagina inicio.html">Descubre más</a>
+        </div>
+
+        <div class="posts-blog">
+            <img src="imagenes/torneo clinic.jpeg" alt="">
+            <h4>Torneo Clinic</h4>
+        <p> El 1er Torneo Clinic del año. Impartido por José Manuel Lara, golfista profesional de Laragolf academy.</p>
+       <br><br><br><br><br><br><br><br><br><br>
+        <a class="blogs-btn" href="pagina inicio.html">Descubre más</a>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <div class="footercontainer">
+        <div class="socialicons"> 
+            <a href="https://www.facebook.com/kikuninus.golf"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kikuninusgolf/"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@kikuninus.golf"> <i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://twitter.com/kikuninus"> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footernav">
+            <ul>
+                <li><a href="pagina inicio.html">Sobre nosotros</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footerbottom">
+        <p>Copyright &copy; 2024; Designed by <span class="design">Marina Ertl</span></p>
+    </div>
+    
+</footer>
+
+</body>
+</html>

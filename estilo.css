@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url(estilofooter.css);
+
+
+*,
+* ::before,
+* ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+min-height: 250vh;
+box-sizing: border-box;
+background-color: rgb(255, 255, 255);
+background-image: url(https://fotografias.larazon.es/clipping/cmsimages01/2022/05/11/A1E37850-9E34-40DA-BD44-A9B878DA8649/98.jpg?crop=1216,684,x0,y114&width=1900&height=1069&optimize=low&format=webply);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin: 0;
+padding-bottom: 300px;
+position: relative;
+}
+
+h1{text-align: center;}
+main{margin: 20px; 
+padding: 130px 50px;}
+
+
+title{text-align: left;}
+
+
+.p1, .p2{border: solid #eae1e100 4px;border-radius: 20px; background-color: rgba(253, 253, 253, 0.749); color: rgb(8, 82, 42); margin: auto; padding: 0 30px; font-size: 20px;}
+
+
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    background-color: rgba(1, 1, 1, 0.7);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+    }
+    
+    
+    .logo img{
+    padding: 5px 0px 0px 0px;
+    width: 60px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    }
+    
+    
+    .navigation ul{
+    list-style: none;
+    }
+    
+    .header .navigation ul li{
+        float: left;
+        position: relative;
+    }
+    
+    .header .navigation ul li a{
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        padding: 22px;
+        display: block;
+        transition: all .2 ease;
+    }
+    
+    .header .navigation ul li a:hover{
+        background-color: #14b60272;
+    }
+    
+    .header .navigation ul li ul{
+        position: absolute;
+        right:0;
+        width: 300px;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+    
+    
+    .header .navigation ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+    }
+    
+    
+    .header .navigation ul li ul li ul{
+    position: absolute;
+    top:0;
+    right:300px;
+    }
+    
+    .header .navigation ul li ul li{
+    width:100%;
+    }
+    
+    .header .navigation ul li:hover > ul {
+    display: initial;
+    }
+    
+    #toggle {display: none; display:none; cursor:pointer;}
+    
+header
+    label{display: none; cursor: pointer;}
+    .heather label{
+        display:none;
+        cursor:pointer;
+    }
+
+    
+    .menu{
+    width: 45px;
+    height:35px
+    }
+    
+    @media (max-width: 700px) {
+        .header label {
+            display: initial;
+        }
+    
+        .header{
+            padding: 20px 10%;
+        }
+    
+    
+    .header .navigation{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+    
+    .header .navigation ul li {
+    width:100%;
+    }
+    
+    .header .navigation ul li a{
+        padding: 8px 30px 8px 10%;
+    }
+    
+    .header .navigation ul li ul{
+        position: relative;
+        width: 100%;
+        left:0;
+    }
+    
+    .header .navigation ul li ul li{
+    background-color: rgba(1, 1, 1, 0.7);
+    }
+    
+    .header .navigation ul li ul li ul{
+    position: relative;
+    width: 100%;
+    left: 0;
+    }
+    
+    
+    #toggle:checked ~ .navigation{
+    display: block;
+    }
+    
+    .hero{
+    min-height: 100hv;
+    background-image: url(KIKUNINUS/imagenes/golf_1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    
+    }
+    
+    
+
+main{
+    color: white;
+}
+
+
+
+footer{
+        background-color: #111;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        }
+        
+        .footercontainer{
+            width: 100%;
+            padding: 70px 30px 20px;
+        }
+        
+        .socialicons{
+        display: flex;
+        justify-content: center;
+        }
+        
+        .socialicons a{
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+        }
+        
+        .socialicons a i{
+        font-size: 2em;
+        color: black;
+        opacity: 0.9;
+        }
+        
+        .socialicons a:hover{
+        background: #111;
+        transition: 0.5s;
+        }
+        
+        .socialicons a:hover i{
+        color: white;
+        transition: 0.5s;
+        }
+        
+        .footernav{
+            margin: 30px 0
+        }
+        
+        .footernav ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        .footernav ul li a{
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5;
+        }
+        
+        
+        .footernav ul li a:hover{
+            opacity: 1;
+        }
+        
+        .footerbottom{
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        
+        }
+        
+        .footerbottom p{
+            color: white;
+        }
+        
+        .design{
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #09340c2e;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    color: #283629;
+    font-size: 35px;
+    padding: 0 0 40px 0;
+}
+
+label{
+    color: #ffffff;
+    font-size: 15px ;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius:  25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+
+
+.btn{
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51D94C;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+background-color: #50E04B;
+
+}
+
+
+
+
+h2{color: white;text-align: center; color: #283629;}
+h3{color: #283629; text-decoration: solid;}
+
+
+.competiciones{border: solid #00000000; border-radius: 20px ; background-color: rgba(255, 255, 255, 0.682); color: rgb(10, 97, 42); margin: 10px; width: 600px; margin: 20px; padding: 10px 20px 20px 20px;}  
+
+/*Correspondencias*/
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    max-width: 100%;
+}
+tr:hover{
+    background-color: rgba(19, 105, 2, 0.7);
+}
+
+th,td{
+    padding: 10px;
+}
+
+th{
+    background-color: rgba(4, 78, 30, 0.919);
+    color: white;
+}
+
+td{
+    background-color: rgba(48, 136, 48, 0.501);
+}
+
+
+
+
+.calendariotorneos2{
+    width: 100%;
+}
+
+.calendariotorneos2, .calendariotorneo4, .calendariotorneo5{
+    border: 1px solid black;
+}
+
+.calendariotorneos2{
+    border-collapse: collapse;
+    max-width: 100%;
+}
+.calendariotorneros1 tr:hover{
+    background-color: rgba(39, 45, 36, 0.7);
+}
+
+.calendariotorneo4, .calendariotorneo5{
+    padding: 5px;
+}
+
+.calendariotorneo4{
+    background-color: rgba(88, 97, 91, 0.919);
+    color: white;
+}
+
+.calendariotorneo5{
+    background-color: rgba(3, 54, 3, 0.501);
+}
+
+.calendariotorneo5 a{
+    color: white}
+    
+    .calendariotorneo5 a:hover{
+        color: grey;
+    }
+    
+    .calendariotorneo5 a:active{
+        color: black;
+    }
+
+
+
+
+
+
+
+.enlacesinteres{list-style: none;}
+.enlacesinteres1{list-style: none;}
+.enlacesitem a{color: white;}
+
+
+.listadocontactositem{list-style: none;}
+
+
+
+
+
+
+@media (max-width:700){
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    body{
+       padding: 30px;
+       min-height: 300px;
+    }
+   
+    form{
+       padding: 50px 30px;
+       width: 100%;
+    }
+   
+    input{
+       padding:15px;
+    }
+   
+   }
+
+
+
+
+
+
+
+
+
+
+
